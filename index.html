@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matteo Sebastiani · Software Developer &amp; Web Developer</title>
+<meta name="description" content="Portfolio di Matteo Sebastiani: siti web, software e siti per matrimoni realizzati su misura.">
+<meta name="theme-color" content="#F6F7F9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Matteo Sebastiani · Software Developer &amp; Web Developer">
+<meta property="og:description" content="Siti web, software e siti per matrimoni realizzati su misura.">
+<meta property="og:image" content="images/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2312161C'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EMS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#home">Matteo Sebastiani</a>
+    <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Principale">
+      <a href="#home">Home</a>
+      <a href="#progetti">Progetti</a>
+      <a href="#matrimoni">Matrimoni</a>
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#contatti" class="menu-cta">Contattami</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="home">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="role"><span class="dot"></span>Software Developer &amp; Web Developer</p>
+        <h1>Creo esperienze digitali che prendono vita sul web.</h1>
+        <p class="lead">Siti web, applicazioni e software su misura, progettati con cura per chi vuole un risultato professionale e semplice da usare. <span class="ph">INSERISCI QUI LA TUA DESCRIZIONE</span></p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#progetti">Scopri i miei progetti</a>
+          <a class="btn btn-ghost" href="#contatti">Contattami</a>
+        </div>
+      </div>
+      <div class="hero-visual" id="heroVisual" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="section" id="in-evidenza">
+    <div class="wrap">
+      <div class="head reveal">
+        <h2>Progetti selezionati</h2>
+        <a class="link" href="#progetti">Vedi tutti i progetti →</a>
+      </div>
+      <div class="grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="progetti">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <h2>Progetti</h2>
+          <p class="sub">Una raccolta dei lavori realizzati, tra siti web, app e software.</p>
+        </div>
+      </div>
+      <div class="filters reveal" id="filters" role="group" aria-label="Filtra i progetti"></div>
+      <div class="grid" id="projectsGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="wedding" id="matrimoni">
+    <div class="wrap">
+      <div class="wedding-head reveal">
+        <h2>Siti Web per Matrimoni</h2>
+        <p>Creo siti web personalizzati per raccontare la storia degli sposi, condividere tutte le informazioni del matrimonio e offrire agli invitati un punto di riferimento semplice ed elegante.</p>
+      </div>
+      <div class="grid" id="weddingGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="chi-sono">
+    <div class="wrap about">
+      <div class="avatar reveal" aria-label="Spazio per la tua foto"><span>MS</span><small class="ph">INSERISCI QUI LA TUA FOTO (images/avatar.jpg)</small></div>
+      <div class="about-copy reveal">
+        <h2>Chi sono</h2>
+        <p class="lead"><span class="ph">INSERISCI QUI LA TUA DESCRIZIONE</span> Racconta in poche righe chi sei, come lavori e cosa ti distingue.</p>
+        <div class="facts">
+          <div>
+            <h3>Tecnologie</h3>
+            <ul class="chips"><li class="ph">INSERISCI QUI LE TECNOLOGIE</li></ul>
+          </div>
+          <div>
+            <h3>Esperienza</h3>
+            <p class="ph">INSERISCI QUI LA TUA ESPERIENZA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contatti">
+    <div class="wrap contact-in reveal">
+      <div>
+        <h2>Parliamo del tuo progetto.</h2>
+        <p class="lead">Se hai un'idea, un progetto o hai bisogno di un sito web, scrivimi.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a data-link="email" href="#"><span>Email</span><b data-text="email">INSERISCI QUI EMAIL</b></a></li>
+        <li><a data-link="github" href="#" target="_blank" rel="noopener noreferrer"><span>GitHub</span><b data-text="github">INSERISCI QUI GITHUB</b></a></li>
+        <li><a data-link="linkedin" href="#" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><b data-text="linkedin">INSERISCI QUI LINKEDIN</b></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-name">Matteo Sebastiani</p>
+      <p>Software Developer &amp; Web Developer</p>
+    </div>
+    <ul class="foot-links">
+      <li><a data-link="github" href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a data-link="linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a data-link="email" href="#">Email</a></li>
+    </ul>
+    <p class="copy">© 2026 Matteo Sebastiani</p>
+  </div>
+</footer>
+
+<script src="projects.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
