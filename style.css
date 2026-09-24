@@ -112,20 +112,15 @@ h2{font-size:clamp(2rem,4.2vw + .5rem,3.4rem);text-wrap:balance}
 }
 
 /* Matrimoni */
-.wedding{background:var(--rose-bg);color:var(--rose-ink);padding:clamp(4rem,9vw,8rem) 0}
-.wedding-head{max-width:40rem;margin:0 auto clamp(2.2rem,5vw,3.5rem);text-align:center}
-.wedding h2{font:italic 300 clamp(2.2rem,5vw + .4rem,3.8rem)/1.1 var(--serif);letter-spacing:-.01em;margin-bottom:1.2rem}
-.wedding-head p{font-size:1.1rem;line-height:1.75;opacity:.85}
-.wedding .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));max-width:1180px;margin-inline:auto}
-.wedding .card{background:#FFFCFB;border-color:#EBD6D8;border-radius:28px}
-.wedding .card h3{font:italic 400 1.9rem/1.15 var(--serif);letter-spacing:0;color:var(--rose-ink)}
-.wedding .meta{color:var(--rose)}
-.wedding .desc{color:#7A5860}
-.wedding .btn-card{background:transparent;border-color:var(--rose);color:var(--rose-ink)}
-.wedding .btn-card:hover,.wedding .btn-card:focus-visible{background:var(--rose-ink);border-color:var(--rose-ink);color:#fff}
-.wedding .bar{background:#F4E6E7;border-color:#EBD6D8}
-.wedding :focus-visible{outline-color:var(--rose-ink)}
-@media (hover:hover){.wedding .card:hover{border-color:var(--rose);box-shadow:0 30px 50px -28px rgba(90,45,56,.4)}.wedding .card:hover .btn-card{background:var(--rose-ink);border-color:var(--rose-ink);color:#fff}}
+.rose .card{background:#FFFCFB;border-color:#EBD6D8;border-radius:28px}
+.rose .card h3{font:italic 400 1.9rem/1.15 var(--serif);letter-spacing:0;color:var(--rose-ink)}
+.rose .meta{color:var(--rose)}
+.rose .desc{color:#7A5860}
+.rose .btn-card{background:transparent;border-color:var(--rose);color:var(--rose-ink)}
+.rose .btn-card:hover,.rose .btn-card:focus-visible{background:var(--rose-ink);border-color:var(--rose-ink);color:#fff}
+.rose .bar{background:#F4E6E7;border-color:#EBD6D8}
+.rose :focus-visible{outline-color:var(--rose-ink)}
+@media (hover:hover){.rose .card:hover{border-color:var(--rose);box-shadow:0 30px 50px -28px rgba(90,45,56,.4)}.rose .card:hover .btn-card{background:var(--rose-ink);border-color:var(--rose-ink);color:#fff}}
 
 /* Chi sono */
 .about{display:grid;grid-template-columns:320px 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
@@ -193,4 +188,41 @@ section[id]{scroll-margin-top:var(--nav)}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
   .js .reveal:not(.in){opacity:1;transform:none}
+}
+
+/* Navigazione a livelli in Progetti */
+.crumbs{display:flex;align-items:center;gap:.9rem;margin-bottom:1.6rem;font-size:.95rem;color:var(--muted)}
+.crumbs:empty{display:none}
+.crumbs a{text-decoration:none}.crumbs a:hover{color:var(--accent)}
+.crumbs .sep{margin:0 .45rem;opacity:.5}
+.crumbs [aria-current]{color:var(--ink);font-weight:600}
+.back{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border:1.5px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink);font-weight:600;transition:border-color .2s,background .2s}
+.crumbs a.back:hover{border-color:var(--ink);color:var(--ink)}
+#pTitle:focus{outline:none}
+h2.serif{font:italic 300 clamp(2.2rem,5vw + .4rem,3.6rem)/1.1 var(--serif);letter-spacing:-.01em;color:var(--rose-ink)}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1rem,2.2vw,1.75rem)}
+.tile{display:flex;flex-direction:column;justify-content:space-between;gap:2.5rem;min-height:320px;padding:clamp(1.5rem,3vw,2.25rem);border-radius:28px;background:var(--bg);border:1px solid var(--line);text-decoration:none;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .3s,opacity .7s var(--ease)}
+.ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.tile h3{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:.6rem}
+.tile p{color:var(--muted);max-width:28em}
+.tile-foot{display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.tile-foot i{width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;transition:background .3s,transform .4s var(--ease)}
+.tile:focus-visible i{background:var(--accent)}
+.tile.rose{background:var(--rose-bg);border-color:#EBD6D8;color:var(--rose-ink)}
+.tile.rose .ico{background:#fff;color:var(--rose)}
+.tile.rose h3{font:italic 400 clamp(2rem,3.4vw,2.7rem)/1.1 var(--serif);letter-spacing:0}
+.tile.rose p{color:#7A5860}
+.tile.rose i{background:var(--rose-ink)}
+.grid.rose{background:var(--rose-bg);padding:clamp(1rem,3vw,2rem);border-radius:32px}
+@media (hover:hover){
+  .tile:hover{transform:translateY(-6px);border-color:#CDD2DA;box-shadow:0 30px 50px -28px rgba(18,22,28,.35)}
+  .tile:hover i{background:var(--accent);transform:translateX(4px)}
+  .tile.rose:hover{border-color:var(--rose);box-shadow:0 30px 50px -28px rgba(90,45,56,.4)}
+  .tile.rose:hover i{background:var(--rose)}
+}
+@media (max-width:760px){
+  .tiles{grid-template-columns:1fr}
+  .tile{min-height:240px;gap:1.75rem;border-radius:24px}
+  .crumbs .trail{display:none}
+  .grid.rose{padding:.75rem;border-radius:24px}
 }
