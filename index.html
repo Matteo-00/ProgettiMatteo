@@ -28,7 +28,6 @@
     <nav id="menu" class="menu" aria-label="Principale">
       <a href="#home">Home</a>
       <a href="#progetti">Progetti</a>
-      <a href="#matrimoni">Matrimoni</a>
       <a href="#chi-sono">Chi sono</a>
       <a href="#contatti" class="menu-cta">Contattami</a>
     </nav>
@@ -51,36 +50,16 @@
     </div>
   </section>
 
-  <section class="section" id="in-evidenza">
-    <div class="wrap">
-      <div class="head reveal">
-        <h2>Progetti selezionati</h2>
-        <a class="link" href="#progetti">Vedi tutti i progetti →</a>
-      </div>
-      <div class="grid" id="featuredGrid"></div>
-    </div>
-  </section>
-
   <section class="section section-tint" id="progetti">
     <div class="wrap">
-      <div class="head reveal">
+      <nav class="crumbs" id="crumbs" aria-label="Percorso"></nav>
+      <div class="head">
         <div>
-          <h2>Progetti</h2>
-          <p class="sub">Una raccolta dei lavori realizzati, tra siti web, app e software.</p>
+          <h2 id="pTitle" tabindex="-1">Progetti</h2>
+          <p class="sub" id="pSub"></p>
         </div>
       </div>
-      <div class="filters reveal" id="filters" role="group" aria-label="Filtra i progetti"></div>
-      <div class="grid" id="projectsGrid" aria-live="polite"></div>
-    </div>
-  </section>
-
-  <section class="wedding" id="matrimoni">
-    <div class="wrap">
-      <div class="wedding-head reveal">
-        <h2>Siti Web per Matrimoni</h2>
-        <p>Creo siti web personalizzati per raccontare la storia degli sposi, condividere tutte le informazioni del matrimonio e offrire agli invitati un punto di riferimento semplice ed elegante.</p>
-      </div>
-      <div class="grid" id="weddingGrid"></div>
+      <div id="pView" aria-live="polite"></div>
     </div>
   </section>
 
